@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Employee Login | Planify</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon"
+		href="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/Favicon-Planify.png"
+		type="image/x-icon" />
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-K3SRQZ8');</script>
+	<!-- End Google Tag Manager -->
+	<script data-ad-client="ca-pub-5016336417243730" async
+		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="planify.in">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FinancialService",
+		"name": "Planify",
+		"image": "https://planify-reports.s3.amazonaws.com/static/stocks/imgs/planify-logo.png",
+		"@id": "",
+		"url": "https://planify.in",
+		"telephone": "91-70-6556-0002",
+		"priceRange": "00",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "91 Springboard, NH8-Udyog Vihar, 90B, Sector 18",
+			"addressLocality": "Gurugram",
+			"postalCode": "122008",
+			"addressCountry": "IN"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 28.4852953,
+			"longitude": 77.0746994
+		} ,
+		"sameAs": [
+		"https://www.facebook.com/planify.in",
+		"https://twitter.com/planifyindia",
+		"https://www.instagram.com/planify.in",
+		"https://www.youtube.com/channel/UCx_W8Qr276cljSg9CGzyDYw",
+		"https://in.linkedin.com/company/planify-in",
+		"https://in.pinterest.com/planifyin"
+		] 
+	}
+</script>
+	<!-- Quora Pixel Code (JS Helper) -->
+	<script>
+		!function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+		qp('init', 'efcfebc6994a44db82dbb72f535fec5b');
+		qp('track', 'ViewContent');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://q.quora.com/_/ad/efcfebc6994a44db82dbb72f535fec5b/pixel?tag=ViewContent&noscript=1" /></noscript>
+	<!-- End of Quora Pixel Code -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120793429-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-120793429-1');
+	</script>
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }
+			(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '659395537775892');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width=1 style="display:none"
+			src="https://www.facebook.com/tr?id=659395537775892&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+	<!-- Pinterest Tag -->
+	<script>
+		!function (e) {
+			if (!window.pintrk) {
+				window.pintrk = function () { window.pintrk.queue.push(Array.prototype.slice.call(arguments)) }; var
+					n = window.pintrk; n.queue = [], n.version = "3.0"; var
+						t = document.createElement("script"); t.async = !0, t.src = e; var
+							r = document.getElementsByTagName("script")[0];
+				r.parentNode.insertBefore(t, r)
+			}
+		}("https://s.pinimg.com/ct/core.js");
+		pintrk('load', '2613359387339', { em: '<user_email_address>' });
+		pintrk('page');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt=""
+			src="https://ct.pinterest.com/v3/?event=init&tid=2613359387339&pd[em]=<hashed_email_address>&noscript=1" />
+	</noscript>
+	<!-- end Pinterest Tag -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+		integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+		crossorigin="anonymous" />
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+		integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css"
+		integrity="sha512-GgUcFJ5lgRdt/8m5A0d0qEnsoi8cDoF0d6q+RirBPtL423Qsj5cI9OxQ5hWvPi5jjvTLM/YhaaFuIeWCLi6lyQ=="
+		crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"
+		href="https://planify-main.s3.amazonaws.com/static/stocks/css/custom.css" />
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+
+	<style type="text/css">
+		.accordion-button:not(.collapsed)::after {
+			background-image: url('arrow-up.png');
+			transform: rotate(0deg);
+
+		}
+
+		.accordion-button::after {
+			flex-shrink: 0;
+			width: 1rem;
+			height: 1rem;
+			margin-left: auto;
+			content: "";
+			background-image: url('arrow-down.png');
+			background-repeat: no-repeat;
+			background-size: 1rem;
+			transition: transform .2s ease-in-out;
+		}
+
+		*,
+		::after,
+		::before {
+			box-sizing: border-box;
+		}
+
+
+		.bcolor {
+			background-color: #efefef;
+			color: #67016f;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+		}
+
+		.accordion-button:not(.collapsed) {
+			background-color: #AC6AB1;
+			color: #fff;
+		}
+
+
+
+		.respoHeading {
+			font-size: 1.5rem;
+		}
+
+		.respoContent {
+			font-size: 1rem;
+		}
+
+		.respoSmall {
+			font-size: 0.8rem;
+		}
+
+
+
+
+		@media (max-width: 768px) {
+			.respoHeading {
+				font-size: 1rem;
+			}
+
+			.respoContent {
+				font-size: 0.8rem;
+			}
+
+			.respoSmall {
+				font-size: 0.6rem;
+			}
+		}
+
+
+
+		@media (min-width: 768px) {
+			.accordion-item {
+				border: none;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) --> <noscript><iframe
+			src="https://www.googletagmanager.com/ns.html?id=GTM-K3SRQZ8" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+	<!--  MOBILE MENU  -->
+	<div class="container-fluid sticky-top d-block d-md-none bg-white">
+		<div class="row custom-shadow mb-md-5">
+			<div class="col-md-12 py-2">
+				<ul class="list-unstyled d-flex justify-content-between">
+					<li class="d-flex">
+						<img src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/menu/hamburger-menu.svg"
+							class="img-fluid me-2" height="32" width="32" data-bs-toggle="offcanvas"
+							data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+						<img src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/menu/planify-logo-1%401x.png"
+							class="img-fluid" width="100" height="auto">
+					</li>
+					<li class="d-flex">
+						<!-- <img src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/menu/path-15239%401x.png" class="img-fluid" height="32" width="32"> <img src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/menu/path-15228%401x.png" class="img-fluid" height="32" width="32"> -->
+						<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#leadGenFormModal"><span
+								class="btn btn-outline-indigo" style="border: 1px solid #67016f">Contact Us</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+		<div class="offcanvas-header bg-indigo">
+			<p class="text-white main-heading" id="mobileMenuLabel">Login &amp; Signup</p>
+			<i class="fas fa-angle-right float-end my-auto"></i>
+			<!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+		</div>
+		<div class="offcanvas-body px-0">
+			<div class="accordion" id="accordionMobileMenu">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="productHeader">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#productsCollapse" aria-expanded="false" aria-controls="productsCollapse">
+							Products
+						</button>
+					</h2>
+					<div id="productsCollapse" class="accordion-collapse collapse" aria-labelledby="productHeader"
+						data-bs-parent="#accordionMobileMenu">
+						<div class="accordion-body">
+							<ul class="list-unstyled">
+								<li>PreIPO</li>
+								<li>Startup Fund Raising</li>
+								<li>Valuations</li>
+								<li>Equity Restructing</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="servicesHeader">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#servicesCollapse" aria-expanded="false" aria-controls="servicesCollapse">
+							Services
+						</button>
+					</h2>
+					<div id="servicesCollapse" class="accordion-collapse collapse" aria-labelledby="servicesHeader"
+						data-bs-parent="#accordionMobileMenu">
+						<div class="accordion-body">
+							<ul class="list-unstyled">
+								<li class="small text-muted">Investments</li>
+								<li>Mutual Funds</li>
+								<li>Demat Account</li>
+								<li>Bonds/NCD</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="small text-muted">Insurance</li>
+								<li>Life Insurance</li>
+								<li>Health Insurance</li>
+								<li>Car Insurance</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="small text-muted">Corporates & Business</li>
+								<li>Property Insurance</li>
+								<li>Group Health Insurance</li>
+								<li>Marine Insurance</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="blogHeader">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#blogCollapse" aria-expanded="false" aria-controls="blogCollapse">
+							Blog
+						</button>
+					</h2>
+					<div id="blogCollapse" class="accordion-collapse collapse" aria-labelledby="blogHeader"
+						data-bs-parent="#accordionMobileMenu">
+						<div class="accordion-body">
+							<ul class="list-unstyled">
+								<li><a class="text-menu" href="/blog/">Home</a></li>
+								<li><a class="text-menu" href="/video/">Videos</a></li>
+								<li><a class="text-menu" href="/news-feed/">News Feed</a></li>
+								<li><a class="text-menu" href="/news-feed/pre-ipo-in-news">News Web</a></li>
+								<li><a class="text-menu" href="/research-report/">Research Report</a></li>
+								<li><a class="text-menu" href="/video-shorts/">Shorts</a></li>
+								<li><a class="text-menu" href="/blog/media-blog/">Media</a></li>
+								<li><a class="text-menu" href="/blog/article-blog/}">Articles</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dropdown-divider"></div>
+			<div class="accordion" id="mobileMenuPhone">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="phoneCollapse">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#phoneMobileMenu" aria-expanded="false" aria-controls="phoneMobileMenu">
+							<img class="me-2"
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/menu/Phone.svg"
+								height="25" width="25"> Phone
+						</button>
+					</h2>
+					<div id="phoneMobileMenu" class="accordion-collapse collapse" aria-labelledby="phoneCollapse"
+						data-bs-parent="#mobileMenuPhone">
+						<div class="accordion-body">
+							<ul class="list-unstyled">
+								<li class="my-2"><a class="" href="tel:+91-70-6556-0002"><i
+											class="fas fa-phone-volume text-indigo"></i> +91-70-6556-0002</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="my-2"><a class="" href="http://wa.me/917065560002?text=Planify"><i
+											class="fab fa-whatsapp text-indigo"></i> +91-70-6556-0002</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="my-2"><a class="" href="mailto:help@planify.in"><i
+											class="fas fa-envelope-open-text text-indigo"></i> help@planify.in</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // MOBILE MENU // -->
+	<nav class="navbar navbar-expand-lg navbar-light custom-shadow sticky-top bg-white d-none d-md-block"
+		style="z-index: 1021;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/"><img
+					src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/planify-logo.png" class="img-fluid"
+					width="120"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavBarPlanify"
+				aria-controls="mainNavBarPlanify" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse fwb-candara" id="mainNavBarPlanify">
+				<ul class="navbar-nav me-auto mb-lg-0">
+					<li class="nav-item mx-2 dropdown">
+						<a class="nav-link text-menu-indigo" href="#" id="productsDD" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"> Products </a>
+						<div class="dropdown-menu big-menu" aria-labelledby="productsDD" style="width: 30rem;">
+							<div class="row shadow">
+								<div class="col-md-5 px-3 py-2" style="background: #F6F6F6;">
+									<p class="main-content fw-bold">Products</p>
+									<p class="fw-normal">Our Pitchdeck, Valuations reports helps startup raise growth
+										funding at ease.</p>
+								</div>
+								<div class="col-md-7 px-3 py-2 bg-white">
+									<ul class="list-unstyled row">
+										<li class="col-md-4"><a class="text-menu" href="/pre-ipo">Pre IPO</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+
+					<li class="nav-item mx-2 dropdown">
+						<a class="nav-link text-menu-indigo" href="#" id="blogDD" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"> Blog </a>
+						<div class="dropdown-menu big-menu" aria-labelledby="blogDD"
+							style="width: 45rem;margin-left: -10rem;">
+							<div class="row shadow">
+								<div class="col-md-3 px-3 py-2" style="background: #F6F6F6;">
+									<p class="main-content fw-bold">Blog</p>
+									<p class="fw-normal">Everything you need to know about Private Equity Investments
+									</p>
+								</div>
+								<div class="col-md-9 px-3 py-2 bg-white">
+									<ul class="list-unstyled row">
+										<li class="col-md-3 my-3"><a class="text-menu" href="/blog/">Home</a></li>
+										<li class="col-md-3 my-3"><a class="text-menu" href="/video/">Videos</a></li>
+										<li class="col-md-3 my-3"><a class="text-menu" href="/news-feed/">News Feed</a>
+										</li>
+										<li class="col-md-3 my-3"><a class="text-menu"
+												href="/news-feed/pre-ipo-in-news">News Web</a></li>
+										<li class="col-md-3 my-3"><a class="text-menu" href="/research-report/">Research
+												Report</a></li>
+										<li class="col-md-3 my-3"><a class="text-menu" href="/video-shorts/">Shorts</a>
+										</li>
+										<li class="col-md-3 my-3"><a class="text-menu"
+												href="/blog/media-blog/">Media</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+				<form class="d-flex mx-auto" action="/blog/search" method="GET" enctype="multipart/form-data">
+					<div class="input-group">
+						<input type="text" name="searchq"
+							class="form-control border-end-0 d-none d-md-block border-start-10"
+							placeholder="Search stocks, indices, ETFs or brands"
+							aria-label="Search stocks, indices, ETFs or brands" aria-describedby="stockSearch"
+							style="font-size: 0.8rem; width: 15rem; border: 1px solid #ac6ab1;">
+						<button class="input-group-text bg-white border-start-0 border-end-10" id="stockSearch"
+							style="font-size: 0.8rem;border: 1px solid #ac6ab1;"><img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/search-icon-10%401x.png"
+								width="21" height="21"></button>
+					</div>
+				</form>
+				<ul class="navbar-nav ms-auto mb-lg-0">
+
+					<li class="dropdown nav-item mx-md-3 d-none d-md-block">
+						<a class="nav-link dropdown-toggle" href="#" id="CTAdd" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/menu/Phone.svg"
+								height="25" width="25"> </a>
+						<ul class="dropdown-menu dropdown-menu-right border-0 shadow" aria-labelledby="CTAdd">
+							<li class="my-2"><a class="dropdown-item" href="tel:+91-70-6556-0002"><i
+										class="fas fa-phone-volume text-indigo"></i> +91-70-6556-0002</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li class="my-2"><a class="dropdown-item" href="http://wa.me/917065560002?text=Planify"><i
+										class="fab fa-whatsapp text-indigo"></i> +91-70-6556-0002</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li class="my-2"><a class="dropdown-item" href="mailto:help@planify.in"><i
+										class="fas fa-envelope-open-text text-indigo"></i> help@planify.in</a></li>
+						</ul>
+					</li>
+					<li class="dropdown nav-item mx-md-3 mx-2">
+
+						<a class="nav-link dropdown-toggle1 card border-0 imgOverlay" href="#" id="Logindd"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/authenticate/ro%401x.png"
+								height="35" width="35" class="rounded-circle border border-dark card-img"
+								style="padding: 1px;">
+							<div class="card-img-overlay imageOverlap d-none rounded-circle" data-bs-toggle="modal"
+								data-bs-target="#profilePictureUpdate">
+								<p class="text-white text-center"
+									style="font-size: 8px;line-height: 9px;display: inline-block;">Edit Photo</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-right border-0 shadow" aria-labelledby="Logindd">
+							<li class="my-2"><a class="dropdown-item" href="javascript:void(0);">Profile</a></li>
+							<li class="my-2"><a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+							</li>
+							<li class="my-2"><a class="dropdown-item" href="javascript:void(0);">Role Management</a>
+							</li>
+							<li class="my-2"><a class="dropdown-item" href="javascript:void(0);">Listing Page</a></li>
+							<li class="my-2"><a class="dropdown-item" href="javascript:void(0);">Testimonial</a></li>
+							<li class="my-2"><a class="dropdown-item" href="/auth/logout">Logout</a></li>
+						</ul>
+
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Shubahm's work start -->
+
+	<style>
+		.side-card {
+
+			border-right: none;
+			border-left: none;
+			border-top: none;
+		}
+
+		.subContent {
+
+			font-size: 0.75rem;
+			margin-bottom: 0;
+		}
+
+		.headContent {
+			font-size: 0.875rem;
+		}
+
+		.side-card-img {
+			height: 40px;
+			width: 40px;
+		}
+
+		.first-col {
+	border-left: 2px solid gray;
+	border-top-left-radius: 8px;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	border-bottom-left-radius: 8px;
+}
+.second-col {
+	border-right: 2px solid gray;
+	border-top-right-radius: 8px;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	border-bottom-right-radius: 8px;
+}
+	</style>
+
+
+	<div class="container my-md-4">
+		<div class="row">
+			<div class="col-lg-2 d-none d-lg-block first-col">
+				<div class="card side-card mt-3">
+					<!-- <img src="PartnerSignup.svg" class="card-img-top img-fluid ms-3" alt="..." style="width: 50px; height: 50px "> -->
+					<div class="card-body pe-0">
+						<img src="PartnerSignup.svg" class="card-img-top img-fluid side-card-img" alt="...">
+
+						<p class="headContent">Partner Sign up</p>
+						<p class="text-secondary subContent">For Accredited Investors & Institutional Investors</p>
+					</div>
+				</div>
+				<div class="card side-card mt-3">
+					<div class="card-body pe-0">
+						<img src="PremierInvestments.svg" class="card-img-top img-fluid side-card-img" alt="...">
+
+						<p class="headContent">Premiere investments</p>
+						<p class="text-secondary subContent">Be the first to invest in exclusive PreIpo stocks</p>
+					</div>
+				</div>
+				<div class="card side-card mt-3">
+					<div class="card-body pe-0">
+						<img src="driven_technology.svg" class="card-img-top img-fluid side-card-img" alt="...">
+						<p class="headContent">Driven by Technology</p>
+						<p class="text-secondary subContent">Get data to make sound decision in investment</p>
+					</div>
+				</div>
+				<div class="card side-card mt-3">
+					<div class="card-body pe-0">
+						<img src="UniqueInsights.svg" class="card-img-top img-fluid side-card-img" alt="...">
+						<p class="headContent">Unsight Insights</p>
+						<p class="text-secondary subContent">Review and analyze the stocks before investment</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 second-col d-none d-lg-block">
+				<!-- <img src="https://inwoin-for-ec2.s3.amazonaws.com/static/authApp/imgs/Login_Vector.svg" class="img-fluid" alt="login"> -->
+				<div class="row ms-3 d-flex align-items-start" style="background-color: #e7b9eb;">
+					<img src="loginimg.svg" class="img-fluid mt-4 mb-4" alt="login" style="height: 380px;">
+				</div>
+				<div class="row position-relative ms-3" style="background-color: #e7b9eb;">
+					<div class="gx-0 ratio ratio-16x9 mt-2">
+						<iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
+							allowfullscreen style="border-radius: 5px;"></iframe>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="col-lg-5 px-0">
+				<nav class="d-md-none ms-3"
+					style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+					aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active" aria-current="page"><span class="text-indigo fw-bold">
+								<< /span>&nbsp;<span class="text-indigo fw-bold">Login as</span></li>
+					</ol>
+				</nav>
+				<div class="accordion mx-3 my-2" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button d-lg-none bcolor" type="button">
+								 Investor
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body" id="formContainer">
+								<ul class="list-unstyled justify-content-center">
+									<li class="d-flex justify-content-center mt-3">
+										<img src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/planify-logo.png"
+											class="img-fluid mb-4 d-none d-md-block" alt="planify">
+									</li>
+								</ul>
+								<p class="text-center text-secondary respoContent">Please Enter Verification Code(OTP)
+									sent to:</p>
+
+								<p class="text-center text-indigo fs-5 respoHeading">
+									abc@xyz.com
+								</p>
+
+								{{msg}}
+								<form id="id_loginInvestor3" method="POST">
+									<div class="form-group mt-md-3">
+                                        {% csrf_token %}
+										<label for="id_newPassword" class="respoContent">New_Password</label>
+									</div>
+									<div class="input-group mb-0">
+										<input type="Password" name="newPassword" id_newPassword"
+											class="respoContent form-control form-control-lg disabled border-end-0"
+											placeholder="confirm password" aria-label="Username"
+											aria-describedby="basic-addon1" value="">
+										<span class="input-group-text bg-white border-start-0" id="basic-addon1"
+											onClick="myFunction1()"><i class="bi bi-eye-slash text-secondary"
+												id="togglePassword"></i>
+											</a></span>
+									</div>
+									<div class="form-group mt-md-3">
+										<label for="id_confirmPassword" class="respoContent">Confirm_Password</label>
+									</div>
+									<div class="input-group mb-0">
+										<input type="Password" name="confirmPassword" id="id_confirmPassword"
+											class="respoContent form-control form-control-lg disabled border-end-0"
+											placeholder="confirm password" aria-label="Username"
+											aria-describedby="basic-addon1" value="">
+										<span class="input-group-text bg-white border-start-0" id="basic-addon1"
+											onClick="myFunction2()"><i class="bi bi-eye-slash text-secondary"
+												id="togglePassword"></i>
+											</a></span>
+									</div>
+
+									<div class="d-grid gap-2 mt-3">
+										<button class="respoHeading btn btn-indigo btn-lg custRounded text-white"
+											type="submit">Save</button>
+									</div>
+
+									<p class="text-center mt-4 respoContent">or</p>
+
+									<li class="d-flex justify-content-center mt-2">
+										<button class="btn btn-white mt-3 shadow"
+											style="border: 0.5px solid gray; border-radius: 5px;">
+											<img src="Google.png">
+											<span class="respoContent text-secondary px-2 py-1">Continue With
+												Google</span>
+										</button>
+									</li>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script>
+		function myFunction1() {
+			var x = document.getElementById("id_newPassword");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+		function myFunction2() {
+			var x = document.getElementById("id_confirmPassword");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+	</script>
+
+
+	<!-- Shubham's work end -->
+
+	<style type="text/css">
+		.form-control:disabled,
+		.form-control[readonly] {
+			background-color: #fff !important;
+		}
+	</style>
+
+	<div class="d-flex">
+		<div class="my-0 my-sm-3 my-md-5"></div>
+	</div>
+	<footer class="container-fluid">
+		<div class="row">
+			<!-- Licensed By -->
+			<div class="col-md-12 bg-indigo">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<ul class="list-inline d-flex justify-content-around my-4">
+								<li class="list-inline-item my-auto">
+									<p class="main-heading fw-bold text-white mb-0">Licensed By</p>
+								</li>
+								<li class="list-inline-item"><img
+										src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/footerirda-logo%401x.png"
+										height="67"></li>
+								<li class="list-inline-item"><img
+										src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/footeramfi-logo%401x.png"
+										height="67"></li>
+								<li class="list-inline-item"><img
+										src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/footerirda-logo%401x.png"
+										height="67"></li>
+								<li class="list-inline-item d-none d-md-block"><img
+										src="https://inwoin-for-ec2.s3.amazonaws.com/static/stocks/imgs/icons/sebi-logo-5c8db419f5-seeklogo-com-10%401x.png"
+										height="67"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // Licensed By // -->
+			<!-- Footer Main Links -->
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<ul class="list-inline d-flex justify-content-around mt-4 second-heading mb-5 flex-wrap">
+								<li class="list-inline-item border-e-muted m-1"><a href="/team"
+										class="text-muted-trout me-3">Team</a></li>
+								<li class="list-inline-item border-e-muted m-1"><a href="/about-us"
+										class="text-muted-trout me-3">About Us</a></li>
+								<li class="list-inline-item border-e-muted m-1"><a
+										href="http://13.233.123.82:3014/channelPartner"
+										class="text-muted-trout me-3">Channel Partner</a></li>
+								<li class="list-inline-item border-e-muted m-1"><a href="/contact-us"
+										class="text-muted-trout me-3">Contact Us</a></li>
+								<li class="list-inline-item border-e-muted m-1"><a href="/career"
+										class="text-muted-trout me-3">Careers</a></li>
+								<li class="list-inline-item border-e-muted m-1"><a href="javascript:void(0);"
+										class="text-muted-trout me-3">Sitemap</a></li>
+								<li class="list-inline-item m-1"><a href="/pre-ipo" class="text-muted-trout">Pre-IPO</a>
+								</li>
+							</ul>
+							<ul class="list-inline second-heading fw-bold mt-5">
+								<li class="list-inline-item mt-4" style="border-right: 2px solid rgba(103,1,111,1.0);">
+									<a class="text-indigo me-3">Planify Consultancy India Pvt. Ltd</a></li>
+								<li class="list-inline-item mt-4"><a class="text-indigo me-3">Planify Capital India Pvt.
+										Ltd</a></li>
+							</ul>
+							<p class="font-content text-muted-dove-gray mt-4">SEBI Registration - NSE:AP2815021843(CM
+								Segment), AP2815021843(FO Segment), MCX:AP144517</p>
+							<p class="font-content text-muted-dove-gray mt-1">Mutual Fund License No. ARN-164419 , IRDA
+								Code: ABLIC1003123454, ABLIC1003131639</p>
+						</div>
+						<div class="col-md-3 offset-md-1 text-center footer-map">
+							<div class="map-responsive">
+								<iframe
+									src="https://maps.google.com/maps?q=90B,%20Delhi%20%E2%80%93%20Jaipur%20Expy,%20Sector%2018,%20Gurugram,%20Haryana%20122001&t=&z=17&ie=UTF8&iwloc=&output=embed"
+									style="height: 20rem;"></iframe>
+							</div>
+							<p class="text-muted-dove-gray fourth-heading">91 Springboard, NH8-Udyog Vihar, 90B</p>
+							<p class="text-muted-dove-gray fourth-heading">Sector 18, Gurugram, Haryana 122008</p>
+						</div>
+						<style type="text/css">
+							.map-responsive iframe {
+								height: 100%;
+								width: 100%;
+							}
+						</style>
+					</div>
+				</div>
+			</div>
+			<!-- // Foote Main Links // -->
+			<!-- Footer Social Icons -->
+			<div class="col-md-12 bg-shampoo py-2 mt-md-5 mt-3">
+				<ul class="list-inline d-flex justify-content-center flex-wrap">
+					<li class="m-2"><a target="_blank" href="https://www.facebook.com/planify.in"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/facebook-11%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://wa.me/+917065560002"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/path-15246-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://twitter.com/planifyindia"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/twitter-bird-11%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://in.linkedin.com/company/planify-in"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/linkedin-11%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://www.youtube.com/channel/UCx_W8Qr276cljSg9CGzyDYw">
+							<img src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/youtube-11%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://t.me/PlanifyIndia_PreIPOshares"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/telegram--1--12%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://www.instagram.com/planify.in"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/instagram-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://in.pinterest.com/planifyin/"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/path-15247-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://mojapp.in/@planifyindia"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/e280ee6b03a468453af101a91149c25b-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://apps.apple.com/IN/app/id1522698952?mt=8"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/play-circle-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="https://chingari.io/planifyindia"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/chingari-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank" href="javascript:void(0);"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/ro-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+					<li class="m-2"><a target="_blank"
+							href="https://share.myjosh.in/profile/f713b189-a84e-43f1-8d03-4ba25db51107"> <img
+								src="https://inwoin-for-ec2.s3.amazonaws.com/static/website/imgs/Icons/josh-10%401x.png"
+								class="mx-2" height="23"> </a></li>
+				</ul>
+			</div>
+			<!-- // Footer Social Icons // -->
+			<div class="col-md-12 bg-pinky py-3">
+				<div class="container">
+					<div class="row px-md-5 px-2 my-3">
+						<div class="col-md-7">
+							<ul class="list-inline">
+								<li class="list-inline-item pe-1"><a href="javascript:void(0);"
+										class="text-white fw-bold font-content"> Privacy Policy | </a></li>
+								<li class="list-inline-item pe-1"><a href="javascript:void(0);"
+										class="text-white fw-bold font-content"> Cancellation &amp; Refund | </a></li>
+								<li class="list-inline-item pe-1"><a href="javascript:void(0);"
+										class="text-white fw-bold font-content"> Terms &amp; Conditions </a></li>
+							</ul>
+						</div>
+						<div class="col-md-5 text-end">
+							<p class="text-white">Copyright © 2019 Planify.in. All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 text-center small bg-light pt-1">
+				<p>Powered by <a href="https://inwoin.com" style="color: #003a1b;">Inwoin</a></p>
+			</div>
+		</div>
+	</footer>
+	<div id="alerts" style="position: fixed; bottom: 1rem; left: 25%; right: 25%;">
+	</div>
+
+	<!-- Modal -->
+
+	<div class="modal fade" id="leadGenFormModal" tabindex="-1" aria-labelledby="leadGenFormModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content" style="background: rgba(0,0,0,0.929) !important;">
+				<div class="modal-body">
+					<button type="button" class="btn-close1 float-end" data-bs-dismiss="modal" aria-label="Close"
+						style="right: 3.5rem;font-size: 150%;top: 2rem;position: absolute;background: transparent;border: none;"><i
+							class="fas fa-times text-white" style="font-size: 1.7rem;"></i></button>
+
+					<form action="https://nextgencrmservices.com/planify/modules/Webforms/capture.php" method="POST"
+						enctype="multipart/form-data" accept-charset="utf-8" id="id_leadGen"
+						class="row custRounded px-3 py-0 m-auto shadow-sm placeOrder"
+						style="max-height:87vh; overflow-y:scroll;">
+						<input type="hidden" id="id_vtrftk" name="__vtrftk"
+							value="sid:d53540080968fde62929e5869f8c0849346a3aa1,1628160528">
+						<input type="hidden" name="publicid" id="id_publicid"
+							value="d21ee7472ab88aee5e6c96f442a7a998" />
+						<input type="hidden" name="name" id="id_formName" value="PlanifyLeadGenerationFormRR" />
+						<input type="hidden" name="VTIGER_RECAPTCHA_PUBLIC_KEY" id="id_recaptcha_key"
+							value="RECAPTCHA PUBLIC KEY FOR THIS DOMAIN" />
+						<input type="hidden" class="d-none" name="leadsource" id="id_leadsource" value="Web Site" />
+						<input type="hidden" class="d-none" name="label:Source" id="id_Source" value="Website" />
+
+
+						<p class="text-center lead fw-bold text-indigo my-2">Invest In Best Performing Shares</p>
+						<p class="text-center lead">Please share your details.</p>
+						<div class="form-group col-6">
+							<label></label>
+							<input type="text" name="firstname" id="id_firstname" class="form-control shadow"
+								placeholder="Full Name" />
+						</div>
+						<div class="form-group col-6">
+							<label></label>
+							<input type="text" name="mobile" id="id_mobile" class="form-control shadow"
+								pattern="[0-9]{10}" placeholder="Mobile No." required="" />
+							<small id="phoneNoHelp" class="form-text text-muted">Please Enter 10 Digit Phone
+								Number.</small>
+						</div>
+						<div class="form-group col-6">
+							<label></label>
+							<input type="email" name="email" id="id_email" class="form-control shadow"
+								placeholder="E-mail Address">
+						</div>
+						<div class="form-group col-6">
+							<label></label>
+							<input type="text" name="label:location" id="id_location" class="form-control shadow"
+								placeholder="Location">
+						</div>
+						<div class="form-group col-12">
+							<p class="fw-bold text-indigo my-2">I am an</p>
+						</div>
+						<div class="form-group col-12 row customRatio customRatio-place-order-1">
+							<div class="col-md-3 col-6 p-2">
+								<div class="card border-0 shadow h-100">
+									<input type="checkbox" id="id_Investor" name="label:investor" specificVal="investor"
+										onclick="toggleSpecific(this)">
+									<label for="id_Investor" class="shadow col text-center">Investor</label>
+								</div>
+							</div>
+							<div class="col-md-3 col-6 p-2">
+								<div class="card border-0 shadow h-100">
+									<input type="checkbox" id="id_Shareholder" name="label:share-holder"
+										specificVal="shareholder" onclick="toggleSpecific(this)">
+									<label for="id_Shareholder" class="shadow col text-center">Shareholder</label>
+								</div>
+							</div>
+							<div class="col-md-3 col-6 p-2">
+								<div class="card border-0 shadow h-100">
+									<input type="checkbox" id="id_Promoter" name="label:promoter" specificVal="promoter"
+										onclick="toggleSpecific(this)">
+									<label for="id_Promoter" class="shadow col text-center">Promoter</label>
+								</div>
+							</div>
+							<div class="col-md-3 col-6 p-2">
+								<div class="card border-0 shadow h-100">
+									<input type="checkbox" id="id_ChannelPartner" name="label:channel_partner"
+										specificVal="ChannelPartner" onclick="toggleSpecific(this)">
+									<label for="id_ChannelPartner" class="shadow col text-center">Channel
+										Partner</label>
+								</div>
+							</div>
+							<div class="col-md-3 col-6 p-2">
+								<div class="card border-0 shadow h-100">
+									<input type="checkbox" id="id_Institution" name="label:institution"
+										specificVal="institution" onclick="toggleSpecific(this)" />
+									<label for="id_Institution" class="shadow col text-center">Institution</label>
+								</div>
+							</div>
+							<div class="col-md-3 col-6 p-2">
+								<div class="card border-0 shadow">
+									<input type="checkbox" id="id_Employee" name="label:employee" specificVal="employee"
+										onclick="toggleSpecific(this)">
+									<label for="id_Employee" class="shadow col text-center">Employee</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group col-12" id="id_I_Want_To_Div_Heading">
+							<p class="fw-bold text-indigo my-2">I want to</p>
+						</div>
+						<div class="form-group col-12 row customRatio customRatio-place-order-2" id="id_I_Want_To_Div">
+							<div class="col-md-4 col-6 p-2">
+								<div class="card border-0 shadow">
+									<input type="radio" id="id_Buy-Share" name="label:i_want_to" value="buy-shares"
+										onclick="iWantToOptions()" />
+									<label for="id_Buy-Share" class="shadow col text-center">Buy Share</label>
+								</div>
+							</div>
+							<div class="col-md-4 col-6 p-2">
+								<div class="card border-0 shadow">
+									<input type="radio" id="id_Sell-Share" name="label:i_want_to" value="sell-shares"
+										onclick="iWantToOptions()" />
+									<label for="id_Sell-Share" class="shadow col text-center">Sell Share</label>
+								</div>
+							</div>
+							<div class="col-md-4 col-6 p-2">
+								<div class="card border-0 shadow">
+									<input type="radio" id="id_Raise-Funds" name="label:i_want_to"
+										value="Raise-Funds" />
+									<label for="id_Raise-Funds" class="shadow col text-center">Raise Funds</label>
+								</div>
+							</div>
+							<div class="col-md-4 col-6 p-2">
+								<div class="card border-0 shadow">
+									<input type="radio" id="id_Sell-ESOP-Shares" name="label:i_want_to"
+										value="Sell-ESOP-Shares" />
+									<label for="id_Sell-ESOP-Shares" class="shadow col text-center">Sell ESOP
+										Shares</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group col-12" id="id_Interested_In_Company_Div">
+							<label for="id_Interested_In_Company"></label>
+							<select class="form-control shadow" name="label:Interested_In_Comapnies"
+								id="id_Interested_In_Company">
+								<option>---Pre IPO---</option>
+								<option value="Others">Others</option>
+
+								<option value="A V Thomas &amp; Co. Limited">A V Thomas &amp; Co. Limited</option>
+
+								<option value="APL Metals Ltd">APL Metals Ltd</option>
+
+								<option value="Adtech">Adtech</option>
+
+								<option value="Ags Transact Technologies">Ags Transact Technologies</option>
+
+								<option value="Ahmedabad Stock Exchange - (NSDL Only)">Ahmedabad Stock Exchange - (NSDL
+									Only)</option>
+
+								<option value="Amol Minechem">Amol Minechem</option>
+
+								<option value="Anand Rathi">Anand Rathi</option>
+
+								<option value="Anugraha Valve Casting">Anugraha Valve Casting</option>
+
+								<option value="Arch Pharmalabs">Arch Pharmalabs</option>
+
+								<option value="Aricent Technologies">Aricent Technologies</option>
+
+								<option value="Arohan Financial Services">Arohan Financial Services</option>
+
+								<option value="Asiatic Oxygen">Asiatic Oxygen</option>
+
+								<option value="Assam Carbon">Assam Carbon</option>
+
+								<option value="Auckland International Limited">Auckland International Limited</option>
+
+								<option value="Auckland jute">Auckland jute</option>
+
+								<option value="Axles India">Axles India</option>
+
+								<option value="B&amp;A Packaging India Ltd.">B&amp;A Packaging India Ltd.</option>
+
+								<option value="BVG INDIA LIMITED">BVG INDIA LIMITED</option>
+
+								<option value="Badra Estates &amp; Industries Limited">Badra Estates &amp; Industries
+									Limited</option>
+
+								<option value="Bagrrys India Limited">Bagrrys India Limited</option>
+
+								<option value="Balmer Lawrie Van Leer Ltd.">Balmer Lawrie Van Leer Ltd.</option>
+
+								<option value="Bazaar India (Mayasheel Retail)">Bazaar India (Mayasheel Retail)</option>
+
+								<option value="Bellary Steel">Bellary Steel</option>
+
+								<option value="Bharat Hotels">Bharat Hotels</option>
+
+								<option value="Bharat NRE Coke Limited">Bharat NRE Coke Limited</option>
+
+								<option value="Bharat Nidhi">Bharat Nidhi</option>
+
+								<option value="Bira B9 Beverages Limited - (NSDL Only)">Bira B9 Beverages Limited -
+									(NSDL Only)</option>
+
+								<option value="Blossom Industries">Blossom Industries</option>
+
+								<option value="Bombay Gas Company Limited">Bombay Gas Company Limited</option>
+
+								<option value="Bombay Swadeshi Stores Limited">Bombay Swadeshi Stores Limited</option>
+
+								<option value="C&amp;S Electric Limited">C&amp;S Electric Limited</option>
+
+								<option value="CTR Manufacturing Industries Limited">CTR Manufacturing Industries
+									Limited</option>
+
+								<option value="Calcutta Stock Exchange">Calcutta Stock Exchange</option>
+
+								<option value="Camac Commercial Company Limited">Camac Commercial Company Limited
+								</option>
+
+								<option value="Capgemini Technology Services India Limited">Capgemini Technology
+									Services India Limited</option>
+
+								<option value="Capital Small Finance">Capital Small Finance</option>
+
+								<option value="Care Health - (Religare)">Care Health - (Religare)</option>
+
+								<option value="Carrier Air Conditioning">Carrier Air Conditioning</option>
+
+								<option value="Chennai Super Kings">Chennai Super Kings</option>
+
+								<option value="Cochin International Airport">Cochin International Airport</option>
+
+								<option value="Cremica">Cremica</option>
+
+								<option value="Dalmia Refactories">Dalmia Refactories</option>
+
+								<option value="Deepak Industries">Deepak Industries</option>
+
+								<option value="Delhi Stock Exchange">Delhi Stock Exchange</option>
+
+								<option value="Deys Medical Stores (Mfg) Limited">Deys Medical Stores (Mfg) Limited
+								</option>
+
+								<option value="Digvijay Finlease">Digvijay Finlease</option>
+
+								<option value="Down Town Hospital Limited">Down Town Hospital Limited</option>
+
+								<option value="EICL">EICL</option>
+
+								<option value="East India Pharma">East India Pharma</option>
+
+								<option value="Eaton Fluid">Eaton Fluid</option>
+
+								<option value="Elcid Investment Ltd.">Elcid Investment Ltd.</option>
+
+								<option value="Electrosteel Steels Limited">Electrosteel Steels Limited</option>
+
+								<option value="Elofic Industries Limited">Elofic Industries Limited</option>
+
+								<option value="Empire Spices and Foods Limited">Empire Spices and Foods Limited</option>
+
+								<option value="Fairfield Atlas Limited">Fairfield Atlas Limited</option>
+
+								<option value="Fincare Small Finanace Bank">Fincare Small Finanace Bank</option>
+
+								<option value="Fino Paytech Limited">Fino Paytech Limited</option>
+
+								<option value="Five-Star Business Finance Limited">Five-Star Business Finance Limited
+								</option>
+
+								<option value="Frick India Ltd.">Frick India Ltd.</option>
+
+								<option value="G G automotive">G G automotive</option>
+
+								<option value="GKN Driveline">GKN Driveline</option>
+
+								<option value="Gandhar oil refinery">Gandhar oil refinery</option>
+
+								<option value="Genomics Biotech Ltd">Genomics Biotech Ltd</option>
+
+								<option value="Goa Shipyard Limited">Goa Shipyard Limited</option>
+
+								<option value="Gobind Sugar Mills Limited">Gobind Sugar Mills Limited</option>
+
+								<option value="Gujarat NRE Coke Ltd">Gujarat NRE Coke Ltd</option>
+
+								<option value="HDB Financial Services Limited">HDB Financial Services Limited</option>
+
+								<option value="HDFC Securities Limited">HDFC Securities Limited</option>
+
+								<option value="Hero Fincorp Limited">Hero Fincorp Limited</option>
+
+								<option value="Hexaware Technologies">Hexaware Technologies</option>
+
+								<option value="Hicks Thermometers India Limited">Hicks Thermometers India Limited
+								</option>
+
+								<option value="Hindustan Times (Only NSDL Transfer)">Hindustan Times (Only NSDL
+									Transfer)</option>
+
+								<option value="Hindusthan Engineering &amp; Industries Limited">Hindusthan Engineering
+									&amp; Industries Limited</option>
+
+								<option value="Hira Ferro Alloys Ltd">Hira Ferro Alloys Ltd</option>
+
+								<option value="Honeywell Electrical Devices">Honeywell Electrical Devices</option>
+
+								<option value="Hutti Gold Mines Company Limited">Hutti Gold Mines Company Limited
+								</option>
+
+								<option value="ICL Fincorp">ICL Fincorp</option>
+
+								<option value="India Carbon">India Carbon</option>
+
+								<option value="Indian Commodity Stock Exchange">Indian Commodity Stock Exchange</option>
+
+								<option value="Indian Potash">Indian Potash</option>
+
+								<option value="Indo Alusys Industries Ltd.">Indo Alusys Industries Ltd.</option>
+
+								<option value="Indofil Industries">Indofil Industries</option>
+
+								<option value="Infinium Precious Resources Ltd">Infinium Precious Resources Ltd</option>
+
+								<option value="Inkel">Inkel</option>
+
+								<option value="Inox Leasing and Finance Limited">Inox Leasing and Finance Limited
+								</option>
+
+								<option value="Jord Engineers India Ltd">Jord Engineers India Ltd</option>
+
+								<option value="Kamarhatty Company Ltd.">Kamarhatty Company Ltd.</option>
+
+								<option value="Kannur International Airport(NSDL)">Kannur International Airport(NSDL)
+								</option>
+
+								<option value="Kingdisher Airlines Ltd.">Kingdisher Airlines Ltd.</option>
+
+								<option value="Kitply Industries Limited">Kitply Industries Limited</option>
+
+								<option value="Kurlon Enterprises">Kurlon Enterprises</option>
+
+								<option value="Kusum Industrial Gas">Kusum Industrial Gas</option>
+
+								<option value="Lava Mobile">Lava Mobile</option>
+
+								<option value="Lotte India Corporation Ltd.">Lotte India Corporation Ltd.</option>
+
+								<option value="Maharaja Shree Umaid Mills Ltd.">Maharaja Shree Umaid Mills Ltd.</option>
+
+								<option value="Maharashtra Knowledge of Corporation">Maharashtra Knowledge of
+									Corporation</option>
+
+								<option value="Malayalam Communications Limited">Malayalam Communications Limited
+								</option>
+
+								<option value="Manipal Syndicate housing">Manipal Syndicate housing</option>
+
+								<option value="Manjushree Technopark">Manjushree Technopark</option>
+
+								<option value="Martin &amp; Harris Laboratories - NSDL Only">Martin &amp; Harris
+									Laboratories - NSDL Only</option>
+
+								<option value="Maxvalue Credits And Investmnts Ltd.">Maxvalue Credits And Investmnts
+									Ltd.</option>
+
+								<option value="Medi Assist Healthcare Services">Medi Assist Healthcare Services</option>
+
+								<option value="Merind Ltd.">Merind Ltd.</option>
+
+								<option value="Merino">Merino</option>
+
+								<option value="Metropolitan Stock Exchange">Metropolitan Stock Exchange</option>
+
+								<option value="Midland Micro Finance">Midland Micro Finance</option>
+
+								<option value="Milton Cycle">Milton Cycle</option>
+
+								<option value="Minosha India Ltd.">Minosha India Ltd.</option>
+
+								<option value="Mohan Meakin Limited">Mohan Meakin Limited</option>
+
+								<option value="Mohindra Fasteners Limited">Mohindra Fasteners Limited</option>
+
+								<option value="Motilal Oswal Home Finance Limited">Motilal Oswal Home Finance Limited
+								</option>
+
+								<option value="Mysore Paper Mills Ltd">Mysore Paper Mills Ltd</option>
+
+								<option value="NCL Buildtek">NCL Buildtek</option>
+
+								<option value="NCL Holdings (A&amp;S) Limited">NCL Holdings (A&amp;S) Limited</option>
+
+								<option value="National Stock Exchange">National Stock Exchange</option>
+
+								<option value="Nayara Energy">Nayara Energy</option>
+
+								<option value="Nilliampathy Tea &amp; Produce Company">Nilliampathy Tea &amp; Produce
+									Company</option>
+
+								<option value="Otis Elevators">Otis Elevators</option>
+
+								<option value="PB Global Limited">PB Global Limited</option>
+
+								<option value="PCI Papers Limited">PCI Papers Limited</option>
+
+								<option value="PNB Finance &amp; Industries Limited">PNB Finance &amp; Industries
+									Limited</option>
+
+								<option value="PNB Metlife">PNB Metlife</option>
+
+								<option value="Panasonic Appliances">Panasonic Appliances</option>
+
+								<option value="Parry Agro">Parry Agro</option>
+
+								<option value="Paytm One 97 Communication">Paytm One 97 Communication</option>
+
+								<option value="Philips India">Philips India</option>
+
+								<option value="Phillips Lighting - Signify">Phillips Lighting - Signify</option>
+
+								<option value="Premier Cryogenics Ltd.">Premier Cryogenics Ltd.</option>
+
+								<option value="Primier Cryogenic">Primier Cryogenic</option>
+
+								<option value="Proyuga Tech - (NSDL Only)">Proyuga Tech - (NSDL Only)</option>
+
+								<option value="Prudential Sugar Corporation Ltd">Prudential Sugar Corporation Ltd
+								</option>
+
+								<option value="Ramaraju Surgical Cotton Mills">Ramaraju Surgical Cotton Mills</option>
+
+								<option value="Reliance Retail">Reliance Retail</option>
+
+								<option value="Resin &amp; Plastics">Resin &amp; Plastics</option>
+
+								<option value="Ring Plus Aqua Limited">Ring Plus Aqua Limited</option>
+
+								<option value="Roots Multiclean">Roots Multiclean</option>
+
+								<option value="Rydak Syndicate Ltd ">Rydak Syndicate Ltd </option>
+
+								<option value="SBI Home Finance Ltd">SBI Home Finance Ltd</option>
+
+								<option value="SICOM">SICOM</option>
+
+								<option value="Sabmiller Beer">Sabmiller Beer</option>
+
+								<option value="Scottish Assam (India) limited">Scottish Assam (India) limited</option>
+
+								<option value="Shree Hanuman sugar">Shree Hanuman sugar</option>
+
+								<option value="Shriram Life">Shriram Life</option>
+
+								<option value="Sigachi Laboratories Limited">Sigachi Laboratories Limited</option>
+
+								<option value="Simpson and Company Limited">Simpson and Company Limited</option>
+
+								<option value="Sliverline Technologies Limited">Sliverline Technologies Limited</option>
+
+								<option value="Smaash Entertainment">Smaash Entertainment</option>
+
+								<option value="Smile Microfinance - (NSDL Only)">Smile Microfinance - (NSDL Only)
+								</option>
+
+								<option value="Srichakra Cement Ltd">Srichakra Cement Ltd</option>
+
+								<option value="Sterlite Power Transmission Ltd">Sterlite Power Transmission Ltd</option>
+
+								<option value="Studds Accessories Limited">Studds Accessories Limited</option>
+
+								<option value="T Stanes">T Stanes</option>
+
+								<option value="Tamilnad Mercantile Bank">Tamilnad Mercantile Bank</option>
+
+								<option value="Taparia Tools Limited">Taparia Tools Limited</option>
+
+								<option value="Tata Technologies Limited">Tata Technologies Limited</option>
+
+								<option value="Texel Industries Ltd">Texel Industries Ltd</option>
+
+								<option value="Utkarsh Small Finance Bank">Utkarsh Small Finance Bank</option>
+
+								<option value="Vajresh Consultants Ltd">Vajresh Consultants Ltd</option>
+
+								<option value="Webfil Limited">Webfil Limited</option>
+
+								<option value="Xerox India Limited">Xerox India Limited</option>
+
+							</select>
+						</div>
+						<div class="form-group col-md-12 mb-3 d-none" id="id_Ticket_Size_Div">
+							<label></label>
+							<input type="text" name="label:Amount" id="id_Ticket_Size" class="form-control shadow"
+								placeholder="Amount">
+						</div>
+						<div class="form-group col-md-12 mb-3 shareHolderSpecific d-none" id="id_Quantity_Div">
+							<label></label>
+							<input type="text" name="label:Quantity" id="id_Quantity" class="form-control shadow"
+								placeholder="No. of Shares">
+						</div>
+						<div class="form-group col-12">
+							<label id="id_description_label" for="id_description"></label>
+							<textarea class="form-control shadow" placeholder="Message" name="description"
+								id="id_description"></textarea>
+						</div>
+						<div class="form-group col-12">
+							<input type="checkbox" name="agreedToTC" id="id_agreedToTC" value="true" id="id_agreedToTC"
+								class="form-check-input" required="">
+							<label class="small" for="id_agreedToTC">&nbsp; I agree to the Disclaimers, Disclosure,
+								Terms & Conditions and Privacy Policy</label>
+						</div>
+						<input type="hidden" name="label:Interested In" id="id_interestedIn" value="">
+						<input type="hidden" name="label:Transaction" id="id_transaction" value="">
+						<div class="form-group d-grid mt-2">
+							<button type="submit" class="custRounded badge btn-indigo mx-auto py-2 px-3"
+								id="id_submitButtonForPlaceOrder"
+								data-loading-text="<i class='fa fa-spinner fa-spin '></i> Submit"
+								onclick="onButtonSubmitLoader(this);">Submit</button>
+						</div>
+
+					</form>
+					<script
+						type="text/javascript">window.onload = function () { var N = navigator.appName, ua = navigator.userAgent, tem; var M = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i); if (M && (tem = ua.match(/version\/([\.\d]+)/i)) != null) M[2] = tem[1]; M = M ? [M[1], M[2]] : [N, navigator.appVersion, "-?"]; var browserName = M[0]; var form = document.forms[0], inputs = form.elements; form.onsubmit = function () { var required = [], att, val; for (var i = 0; i < inputs.length; i++) { att = inputs[i].getAttribute("required"); val = inputs[i].value; type = inputs[i].type; if (type == "email") { if (val != "") { var elemLabel = inputs[i].getAttribute("label"); var emailFilter = /^[_/a-zA-Z0-9]+([!"#$%&()*+,./:;<=>?\^_`{|}~-]?[a-zA-Z0-9/_/-])*@[a-zA-Z0-9]+([\_\-\.]?[a-zA-Z0-9]+)*\.([\-\_]?[a-zA-Z0-9])+(\.?[a-zA-Z0-9]+)?$/; var illegalChars = /[\(\)\<\>\,\;\:\"\[\]]/; if (!emailFilter.test(val)) { alert("For " + elemLabel + " field please enter valid email address"); return false; } else if (val.match(illegalChars)) { alert(elemLabel + " field contains illegal characters"); return false; } } } if (att != null) { if (val.replace(/^\s+|\s+$/g, "") == "") { required.push(inputs[i].getAttribute("label")); } } } if (required.length > 0) { alert("The following fields are required: " + required.join()); return false; } var numberTypeInputs = document.querySelectorAll("input[type=number]"); for (var i = 0; i < numberTypeInputs.length; i++) { val = numberTypeInputs[i].value; var elemLabel = numberTypeInputs[i].getAttribute("label"); if (val != "") { var intRegex = /^[+-]?\d+$/; if (!intRegex.test(val)) { alert("For " + elemLabel + " field please enter valid number"); return false; } } } }; }</script>
+
+					<script type="text/javascript">
+						var buyShareInput = document.getElementById('id_Buy-Share');
+						var sellShareInput = document.getElementById('id_Sell-Share');
+						var raiseFundInput = document.getElementById('id_Raise-Funds');
+						var sellESOPInput = document.getElementById('id_Sell-ESOP-Shares');
+						var investorInput = document.getElementById('id_Investor');
+						var shareHolderInput = document.getElementById('id_Shareholder');
+						var promoterInput = document.getElementById('id_Promoter');
+						var channelPartnerInput = document.getElementById('id_ChannelPartner');
+						var institutionInput = document.getElementById('id_Institution');
+						var employeeInput = document.getElementById('id_Employee');
+						function clearAllRadios() {
+							investorInput.checked = false;
+							shareHolderInput.checked = false;
+							promoterInput.checked = false;
+							channelPartnerInput.checked = false;
+							institutionInput.checked = false;
+							employeeInput.checked = false;
+						}
+						function hideIwantTo() {
+							buyShareInput.parentNode.parentNode.classList.add('d-none');
+							sellShareInput.parentNode.parentNode.classList.add('d-none');
+							raiseFundInput.parentNode.parentNode.classList.add('d-none');
+							sellESOPInput.parentNode.parentNode.classList.add('d-none');
+						}
+						function toggleSpecific(event) {
+							clearAllRadios()
+							event.checked = true;
+							var descMessageChannel = 'I want to join Planify as channel partner because';
+							var descMessageInstitution = 'I want to join Planify as an Institution because';
+							var toggleFor = event.getAttribute('specificVal');
+							var leadForm = document.getElementById('id_leadGen');
+							var formSpecificVal1 = document.getElementById('id_vtrftk');
+							var formPubID = document.getElementById('id_publicid');
+							var formName = document.getElementById('id_formName');
+							var reCaptchaKey = document.getElementById('id_recaptcha_key');
+							var nameInput = document.getElementById('id_firstname');
+							var phoneInput = document.getElementById('id_mobile');
+							var emailInput = document.getElementById('id_email');
+							var ticketSizeInput = document.getElementById('id_Ticket_Size');
+							var ticketSizeInputDiv = document.getElementById('id_Ticket_Size_Div');
+							var quantityInput = document.getElementById('id_Quantity');
+							var quantityInputDiv = document.getElementById('id_Quantity_Div');
+							var interestInCompInput = document.getElementById('id_Interested_In_Company');
+							var descriptionInput = document.getElementById('id_description');
+							var tAndCInput = document.getElementById('id_agreedToTC');
+							var interestedIn = document.getElementById('id_interestedIn');
+							var shareTransaction = document.getElementById('id_transaction');
+							var iWantToHeadingDiv = document.getElementById('id_I_Want_To_Div_Heading');
+							var iWantToDiv = document.getElementById('id_I_Want_To_Div');
+							var interestInCompDiv = document.getElementById('id_Interested_In_Company_Div');
+							var descLabel = document.getElementById('id_description_label');
+
+							var formIDProspect = 'd21ee7472ab88aee5e6c96f442a7a998';
+							var formNameProspect = 'PlanifyLeadGenerationFormRR';
+							var formIDChannelPartner = 'baf9d67a5a3833628d42b646d9cdf941';
+							var formNameChannelPartner = 'ChannelPartnerNewForm';
+							var channelFieldName = 'label:Channel_Partner_Name';
+							var othersFieldName = 'firstname';
+							var channelFieldPhone = 'phone';
+							var channelFieldEmail = 'email1';
+							var othersFieldPhone = 'mobile';
+							var othersFieldEmail = 'email';
+							var prospectVtrftk = 'sid:666941543e110c9df5cdf3cc2bee2bbe42d58a96,1628164479';
+							var channelPartnerVtrftk = 'sid:e258fe7f6583cb8e45b18e37d17a13aecfb1792e,1631815577';
+							// start of Investor Block
+							if (toggleFor == 'investor') {
+								formSpecificVal1.value = prospectVtrftk;
+								formPubID.value = formIDProspect;
+								formName.value = formNameProspect;
+								if (investorInput.checked) {
+									buyShareInput.checked = true
+									ticketSizeInputDiv.classList.remove('d-none');
+								}
+								else {
+									buyShareInput.checked = false
+									ticketSizeInputDiv.classList.add('d-none');
+								}
+								interestedIn.value = 'Pre IPO';
+								shareTransaction.value = 'Buying';
+								iWantToHeadingDiv.classList.remove('d-none');
+								iWantToDiv.classList.remove('d-none');
+								interestInCompDiv.classList.remove('d-none');
+								descLabel.innerHTML = '';
+								nameInput.setAttribute('name', othersFieldName);
+								phoneInput.setAttribute('name', othersFieldPhone);
+								emailInput.setAttribute('name', othersFieldEmail);
+								hideIwantTo()
+								buyShareInput.parentNode.parentNode.classList.remove('d-none');
+							}
+							// investor block ended
+							// channel Partner
+							else if (toggleFor == 'ChannelPartner') {
+								formSpecificVal1.value = channelPartnerVtrftk;
+								formPubID.value = formIDChannelPartner;
+								formName.value = formNameChannelPartner;
+								iWantToHeadingDiv.classList.add('d-none');
+								iWantToDiv.classList.add('d-none');
+								interestInCompDiv.classList.add('d-none');
+								descLabel.innerHTML = descMessageChannel;
+								nameInput.setAttribute('name', channelFieldName);
+								phoneInput.setAttribute('name', channelFieldPhone);
+								emailInput.setAttribute('name', channelFieldEmail);
+							}
+							// channel partner ended
+							// Institution
+							else if (toggleFor == 'institution') {
+								formSpecificVal1.value = prospectVtrftk;
+								formPubID.value = formIDProspect;
+								formName.value = formNameProspect;
+								iWantToHeadingDiv.classList.add('d-none');
+								iWantToDiv.classList.add('d-none');
+								interestInCompDiv.classList.add('d-none');
+								descLabel.innerHTML = descMessageInstitution;
+								nameInput.setAttribute('name', othersFieldName);
+								phoneInput.setAttribute('name', othersFieldPhone)
+								emailInput.setAttribute('name', othersFieldEmail)
+							}
+							// Institution Ended
+							// share holder
+							else if (toggleFor == 'shareholder') {
+								formSpecificVal1.value = prospectVtrftk;
+								formPubID.value = formIDProspect;
+								formName.value = formNameProspect;
+								if (shareHolderInput.checked) {
+									sellShareInput.checked = true
+									quantityInputDiv.classList.remove('d-none');
+								}
+								else {
+									sellShareInput.checked = false
+									quantityInputDiv.classList.add('d-none');
+								}
+								interestedIn.value = 'Selling Pre IPO';
+								shareTransaction.value = 'Selling';
+								iWantToHeadingDiv.classList.remove('d-none');
+								iWantToDiv.classList.remove('d-none');
+								interestInCompDiv.classList.remove('d-none');
+								descLabel.innerHTML = '';
+								nameInput.setAttribute('name', othersFieldName);
+								phoneInput.setAttribute('name', othersFieldPhone);
+								emailInput.setAttribute('name', othersFieldEmail);
+								hideIwantTo()
+								sellShareInput.parentNode.parentNode.classList.remove('d-none');
+							}
+							// share holder ended
+							// Promoter
+							else if (toggleFor == 'promoter') {
+								formSpecificVal1.value = prospectVtrftk;
+								formPubID.value = formIDProspect;
+								formName.value = formNameProspect;
+								if (promoterInput.checked) {
+									raiseFundInput.checked = true
+									ticketSizeInputDiv.classList.remove('d-none');
+								}
+								else {
+									raiseFundInput.checked = false
+									ticketSizeInputDiv.classList.add('d-none');
+								}
+								interestedIn.value = 'Fund Raising';
+								shareTransaction.value = 'Selling';
+								iWantToHeadingDiv.classList.remove('d-none');
+								iWantToDiv.classList.remove('d-none');
+								interestInCompDiv.classList.remove('d-none');
+								descLabel.innerHTML = '';
+								nameInput.setAttribute('name', othersFieldName);
+								phoneInput.setAttribute('name', othersFieldPhone);
+								emailInput.setAttribute('name', othersFieldEmail);
+								hideIwantTo()
+								raiseFundInput.parentNode.parentNode.classList.remove('d-none');
+							}
+							// Promoter ended
+							// Employee
+							else if (toggleFor == 'employee') {
+								formSpecificVal1.value = prospectVtrftk;
+								formPubID.value = formIDProspect;
+								formName.value = formNameProspect;
+								if (employeeInput.checked) {
+									sellESOPInput.checked = true
+									quantityInputDiv.classList.remove('d-none');
+								}
+								else {
+									sellESOPInput.checked = false
+									quantityInputDiv.classList.add('d-none');
+								}
+								interestedIn.value = 'Selling Pre IPO';
+								shareTransaction.value = 'Selling';
+								iWantToHeadingDiv.classList.remove('d-none');
+								iWantToDiv.classList.remove('d-none');
+								interestInCompDiv.classList.remove('d-none');
+								descLabel.innerHTML = '';
+								nameInput.setAttribute('name', othersFieldName);
+								phoneInput.setAttribute('name', othersFieldPhone);
+								emailInput.setAttribute('name', othersFieldEmail);
+								hideIwantTo()
+								sellESOPInput.parentNode.parentNode.classList.remove('d-none');
+							}
+							// Employee ended
+						}
+					</script>
+					<script type="text/javascript">
+						var selectedOption = document.querySelectorAll('input[type=radio][name="label:i_want_to"]');
+						var ticketSizeInputDiv = document.getElementById('id_Ticket_Size_Div');
+						var quantityInputDiv = document.getElementById('id_Quantity_Div');
+						var shareTransaction = document.getElementById('id_transaction');
+						function iWantToOptions(event) {
+							if (this.value == 'Buy-Share') {
+								ticketSizeInputDiv.classList.remove('d-none');
+								quantityInputDiv.classList.add('d-none');
+								shareTransaction.value = 'Buying';
+								interestedIn.value = 'Pre IPO';
+							}
+							else if (this.value == 'Sell-Share') {
+								quantityInputDiv.classList.remove('d-none');
+								ticketSizeInputDiv.classList.add('d-none');
+								shareTransaction.value = 'Selling';
+								interestedIn.value = 'Selling Pre IPO';
+							}
+							// console.log(this.value)
+						}
+						Array.prototype.forEach.call(selectedOption, function (radio) {
+							radio.addEventListener('change', iWantToOptions);
+						});
+					</script>
+					<script type="text/javascript">
+						function onButtonSubmitLoader(event) {
+							var loadingText = event.getAttribute('data-loading-text');
+							event.innerHTML = loadingText;
+							event.setAttribute('type', 'button');
+							event.setAttribute('disabled', 'disabled');
+							document.getElementById('id_leadGen').submit();
+						}
+					</script>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- DELETE UNIVERSAL Modal -->
+	<div class="modal fade" id="id_FKDeleteModal" tabindex="-1" aria-labelledby="FKDeleteModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="modal-title h5" id="FKDeleteModalLabel">Delete Data</p>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="id_FKDelete" action="" method="POST" enctype="multipart/form-data">
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- profile pic modal -->
+	<div class="modal fade" id="profilePictureUpdate" tabindex="-1" aria-labelledby="profilePictureUpdateLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<form method="POST" enctype="multipart/form-data" action="/employee/profile-pic-update"
+				class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<input type="hidden" name="csrfmiddlewaretoken"
+						value="FCmQLWpvajZky4duva43lF9kO45o1EHduDKlfIh4PKCbouLIaaoMCD8WDDf0yr2n">    
+					<input type="hidden" name="requestFrom" value="/auth/employee-login-2?profile=">
+					<input type="hidden" name="dataUser" value="shubham.sharma@planify.in">
+					<div class="form-group">
+						<label class="fw-bold small">Select File to Update</label>
+						<input type="file" name="profileImage" class="form-control">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-primary">Update</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- // profile pic modal // -->
+
+	<style type="text/css">
+		.dropdown-menu-right {
+			right: 0;
+			left: auto;
+		}
+
+		.imgOverlay .imageOverlap {
+			transition: .3s ease-in-out;
+		}
+
+		.imgOverlay:hover .imageOverlap {
+			display: inline-block !important;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+		integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+		integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.7/holder.min.js"
+		integrity="sha512-O6R6IBONpEcZVYJAmSC+20vdsM07uFuGjFf0n/Zthm8sOFW+lAq/OK1WOL8vk93GBDxtMIy6ocbj6lduyeLuqQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+		integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"
+		integrity="sha512-WHnaxy6FscGMvbIB5EgmjW71v5BCQyz5kQTcZ5iMxann3HczLlBHH5PQk7030XmmK5siar66qzY+EJxKHZTPEQ=="
+		crossorigin="anonymous"></script>
+	<!-- PDF CHECK -->
+	<script type="text/javascript">
+		function afterModalPDFChecker() {
+			var selectedElem1 = document.getElementById("id_linkFrReport")
+			function checkPDF() {
+				var pdf_check = selectedElem1.value.toLowerCase();
+				if (!pdf_check.endsWith('.pdf')) {
+					alert('Please upload PDF files only.');
+					selectedElem1.value = ''
+					return false
+				}
+			}
+			selectedElem1.addEventListener("change", checkPDF);
+		}
+	</script>
+	<!-- // PDF CHECK // -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var owl = $('#mobileScroller');
+			owl.owlCarousel({
+				loop: false,
+				margin: 10,
+				items: 1,
+			});
+		})
+	</script>
+	<!-- Image CHECK -->
+	<script type="text/javascript">
+		// function afterModalImageChecker(){
+		// 	var selectedElem1 = document.getElementById("id_promoterImage")
+		// 	function checkIMAGE(){
+		// 		var image_check = selectedElem1.value.toLowerCase();
+		// 		if(!image_check.endsWith('.jpg') && !image_check.endsWith('.jpeg') && !image_check.endsWith('.png') && !image_check.endsWith('.gif')){
+		// 			alert('Please upload jpg, jpeg, png or gif images only.');
+		// 			selectedElem1.value = ''
+		// 			return false
+		// 		}
+		// 	}
+		// 	selectedElem1.addEventListener("change", checkIMAGE);
+		// }
+	</script>
+	<!-- // Image CHECK // -->
+
+
+
+	<!-- OFF-CANVAS ACTIVATOR -->
+	<script type="text/javascript">
+		var offcanvasElementList = [].slice.call(document.querySelectorAll('.offcanvas'))
+		var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
+			return new bootstrap.Offcanvas(offcanvasEl)
+		})
+	</script>
+	<!-- // OFF-CANVAS ACTIVATOR // -->
+	<script type="text/javascript">
+		function alertMessage(message, type) {
+			var alertMsg = message
+			var alertType = type
+			if (alertType == 'success') {
+				var alertClass = 'alert-success'
+			}
+			else if (alertType == 'error') {
+				var alertClass = 'alert-danger'
+			}
+			else {
+				var alertClass = 'alert-warning'
+			}
+			var alertHTML = `<div class="alert ${alertClass} alert-dismissable mx-auto" role="alert" style="width: 50%;">${alertMsg}<button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button></div>`
+			document.getElementById('alerts').innerHTML = alertHTML
+			$('#alerts').show();
+			setTimeout(function () { $('#alerts').fadeOut(); }, 1000);
+		}
+	</script>
+</body>
+
+</html>
